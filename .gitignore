@@ -1,0 +1,10 @@
+venv/
+env/
+node_modules/
+__pycache__/
+.env
+*.vdi
+*.vbox-prev
+.vscode/
+dist/
+build/
