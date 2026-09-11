@@ -26,7 +26,9 @@ jobs:
     - name: Run tests with coverage
       run: |
         cd venom-backend
-        pip install pytest pytest-cov
+        pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install matplotlib pytest pytest-cov
         pytest tests/ --cov=app --cov-report=xml
         cp coverage.xml ../
         cd ..
